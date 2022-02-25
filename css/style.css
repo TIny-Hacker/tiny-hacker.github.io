@@ -15,6 +15,18 @@
     color: whitesmoke;
 }
 
+.link {
+    color: #005aa8;
+}
+
+.link:visited {
+    color: #004079;
+}
+
+.link:active {
+    color: #006cca;
+}
+
 .download {
     text-align: center;
     text-decoration: none;
