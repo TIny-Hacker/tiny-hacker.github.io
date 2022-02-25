@@ -57,3 +57,23 @@
     border: solid #006cca 2px;
     padding: 10px;
 }
+
+footer {
+    background-color: #282828;
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+.footer-link {
+    color: rgb(126, 126, 126);
+}
+
+.footer-link:active {
+    color:rgb(151, 151, 151);
+}
+
+.footer-link:visited {
+    color:rgb(92, 92, 92)
+}
