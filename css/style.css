@@ -85,10 +85,28 @@ footer {
     color:rgb(92, 92, 92);
 }
 
+/* 404 */
+
 .home {
     filter: invert(20%) sepia(98%) saturate(3409%) hue-rotate(196deg);
 }
 
 .home:hover {
     opacity: 0.5;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    opacity: 0;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(151, 151, 151);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background:rgb(126, 126, 126);
 }
