@@ -23,21 +23,21 @@
 }
 
 .link {
-    color: #005aa8;
+    color: #006cca;
 }
 
 .link:visited {
-    color: #004079;
+    color: #004dab;
 }
 
 .link:active {
-    color: #006cca;
+    color: #037ddc;
 }
 
 .download {
     text-align: center;
     text-decoration: none;
-    color: whitesmoke;
+    filter: invert(61%) sepia(0%) saturate(1623%) hue-rotate(263deg) brightness(81%) contrast(85%);
 }
 
 .download:hover {
@@ -98,14 +98,14 @@ footer {
 /* scrollbar */
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 }
 ::-webkit-scrollbar-track {
     opacity: 0;
 }
 ::-webkit-scrollbar-thumb {
     background: rgb(151, 151, 151);
-    border-radius: 4px;
+    border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
     background:rgb(126, 126, 126);
