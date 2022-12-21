@@ -100,13 +100,78 @@ footer {
 ::-webkit-scrollbar {
     width: 6px;
 }
+
 ::-webkit-scrollbar-track {
     opacity: 0;
 }
+
 ::-webkit-scrollbar-thumb {
     background: rgb(151, 151, 151);
     border-radius: 3px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background:rgb(126, 126, 126);
+}
+
+/* Project Statuses */
+
+.complete {
+    text-align: center;
+    text-decoration: none;
+    filter: invert(78%) sepia(24%) saturate(4553%) hue-rotate(47deg) brightness(94%) contrast(77%);
+}
+
+.in-progress {
+    text-align: center;
+    text-decoration: none;
+    filter: invert(89%) sepia(13%) saturate(3121%) hue-rotate(348deg) brightness(98%) contrast(83%);
+}
+
+.unstable {
+    text-align: center;
+    text-decoration: none;
+    filter: invert(23%) sepia(94%) saturate(4990%) hue-rotate(351deg) brightness(94%) contrast(93%);
+}
+
+.canceled {
+    text-align: center;
+    text-decoration: none;
+    filter: invert(23%) sepia(94%) saturate(4990%) hue-rotate(351deg) brightness(94%) contrast(93%);
+}
+
+/* Tooltip stuff from W3 Schools */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -60px;
+    background-color: black;
+    color: rgb(151, 151, 151);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
