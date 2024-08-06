@@ -1,146 +1,245 @@
-#title {
+body {
+    margin: 0px;
+    background-color: #0E1415;
+    font-family: Fira Code;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    flex-grow: 1;
+    background-color: #006CAA;
+    width: 100%;
+    height: 8vh;
+}
+
+.header-text {
+    color: #E0F3FB;
+    font-size: 3vh;
     text-align: center;
-    font-size: 250%;
-    color: #006cca;
+    vertical-align: middle;
+    line-height: 8vh;
 }
 
-#not-found {
+.big-center {
+    color: #DEE3E5;
+    font-size: 10vh;
     text-align: center;
-    font-size: 250%;
-    color: #006cca;
-    margin: 10px 50px 0px 50px;
+    margin-top: 25vh;
 }
 
-.subtitle {
+.small-center {
+    color: #DEE3E5;
+    font-size: 2vh;
     text-align: center;
-    color: #006cca;
-}
-
-.paragraph {
-    text-align: center;
-    font-size:110%;
-    color: whitesmoke;
-}
-
-.link {
-    color: #006cca;
-}
-
-.link:visited {
-    color: #004dab;
-}
-
-.link:active {
-    color: #037ddc;
-}
-
-.download {
-    text-align: center;
-    text-decoration: none;
-    filter: invert(61%) sepia(0%) saturate(1623%) hue-rotate(263deg) brightness(81%) contrast(85%);
-}
-
-.download:hover {
-    opacity: 0.5;
-}
-
-.table {
-    border: solid #006cca 2px;
-    border-collapse: separate;
-    border-spacing: 0;
-    border-radius: 5px;
-    font-size: 125%;
-    color: whitesmoke;
-    text-align: center;
-}
-
-.table .header{
-    border: solid #006cca 2px;
-    font-size: 110%;
-    padding: 10px;
-}
-
-.table .row{
-    border: solid #006cca 2px;
-    padding: 10px;
+    margin-top: 1vh;
 }
 
 footer {
-    background-color: #282828;
-    bottom: 0px;
-    left: 0px;
-    position: fixed;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 4vh;
+    background-color: #006CAA;
 }
 
-.footer-link {
-    color: rgb(126, 126, 126);
+.footer-text {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #E0F3FB;
+    font-size: .85rem;
 }
 
-.footer-link:active {
-    color:rgb(151, 151, 151);
+.footer-text.button {
+    background-color: #104a73;
 }
 
-.footer-link:visited {
-    color:rgb(92, 92, 92);
+.footer-text.button:hover {
+    background-color: #043d66;
 }
 
-/* 404 */
-
-.home {
-    filter: invert(20%) sepia(98%) saturate(3409%) hue-rotate(196deg);
+.footer-text.button:active {
+    background-color: #043d66;
 }
 
-.home:hover {
-    opacity: 0.5;
+
+main {
+    min-height: 88vh;
 }
 
-/* scrollbar */
-
-::-webkit-scrollbar {
-    width: 6px;
+br {
+    display: block;
+    content: "";
+    margin-top: 15px;
 }
 
-::-webkit-scrollbar-track {
-    opacity: 0;
+.text-default {
+    color: #DEE3E5;
+    width: 83%;
+    margin: 15px auto 15px auto;
 }
 
-::-webkit-scrollbar-thumb {
-    background: rgb(151, 151, 151);
-    border-radius: 3px;
+.url-default {
+    color: #C2C7CF;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background:rgb(126, 126, 126);
+.url-default:visited {
+    color: #8C9199;
 }
 
-/* Project Statuses */
+.url-default:active {
+    color: #E0E2E8;
+}
 
-.complete {
+.caption {
+    font-size: 115%;
+    font-weight: 500;
+}
+
+.button {
+    display: flex;
+    min-width: fit-content;
+    border-radius: 28px;
     text-align: center;
     text-decoration: none;
-    filter: invert(78%) sepia(24%) saturate(4553%) hue-rotate(47deg) brightness(94%) contrast(77%);
 }
 
-.in-progress {
-    text-align: center;
+.button.collapsible {
+    margin-bottom: 15px;
+    color: #C2C7CF;
+    border-radius: 5px;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #323539;
+}
+
+.button.collapsible.active {
+    margin-bottom: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.collapsible:after {
+    content: url(../images/expand-down.svg);
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: url(../images/expand-up.svg);
+}
+
+.content {
+    font-weight: 100;
+    margin-bottom: 15px;
+    display: none;
+    overflow: hidden;
+    padding: 5px 10px;
+    border-radius: 0px 0px 5px 5px;
+    background-color: #323539;
+}
+
+.divider {
+    width: 85%;
+    margin: auto auto auto auto;
+    border-bottom: 1px solid #E0E2E8;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: .5rem .5rem .5rem .5rem;
+}
+
+.socials.button {
+    color: #C2C7CF;
+    background-color: #272A2F;
+}
+
+.socials.button:hover {
+    background-color: #323539;
+}
+
+.socials.button:active {
+    background-color: #323539;
+}
+
+.socials.text {
+    align-self: center;
+    vertical-align: middle;
+}
+
+.socials.icon {
+    margin-right: 0rem;
+    align-self: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 85%;
+    margin: 25px auto 25px auto;
+    gap: 25px;
+}
+
+.project-item {
+    flex-grow: 1;
+    flex-basis: 350px;
+    background-color: #272A2F;
+    border-radius: 16px;
+}
+
+.project-item-divider {
+    margin: auto 15px auto 15px;
+    border-bottom: 1px solid #42474E;
+}
+
+.project-item-text {
+    margin: 10px 15px 10px 15px;
+    width: inherit;
+}
+
+.project-item-brief {
+    margin: 10px 15px 10px 15px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.project-item-date {
+    color: #DEE3E5;
+    flex-grow: 1;
+    align-self: flex-start;
+}
+
+.project-item-button {
+    max-height: 24px;
+    margin: 0px 10px 0px 10px;
     text-decoration: none;
-    filter: invert(89%) sepia(13%) saturate(3121%) hue-rotate(348deg) brightness(98%) contrast(83%);
 }
 
-.unstable {
-    text-align: center;
-    text-decoration: none;
-    filter: invert(23%) sepia(94%) saturate(4990%) hue-rotate(351deg) brightness(94%) contrast(93%);
+.project-item-button:hover {
+    opacity: 75%;
 }
 
-.canceled {
-    text-align: center;
-    text-decoration: none;
-    filter: invert(23%) sepia(94%) saturate(4990%) hue-rotate(351deg) brightness(94%) contrast(93%);
+.project-item-button:active {
+    opacity: 75%;
 }
 
-/* Tooltip stuff from W3 Schools */
+.project-item-icon {
+    max-height: 24px;
+    margin: 0px 10px 0px 10px;
+}
+
 .tooltip {
     position: relative;
     display: inline-block;
@@ -149,29 +248,99 @@ footer {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    bottom: 120%;
-    left: 50%;
-    margin-left: -60px;
-    background-color: black;
-    color: rgb(151, 151, 151);
+    background-color: #36393e;
+    color: #c2c7cf;
     text-align: center;
-    padding: 5px 0;
     border-radius: 6px;
+    padding: 5px 0;
     position: absolute;
     z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .tooltip .tooltiptext::after {
-    content: " ";
+    content: "";
     position: absolute;
-    top: 100%; /* At the bottom of the tooltip */
+    top: 100%;
     left: 50%;
     margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
+    border-style: none;
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+    opacity: 1;
+}
+
+/*
+ *
+ * Animations (with very slight modifications)  from Nanobot567's website:
+ * https://github.com/Nanobot567/nanobot567.github.io/blob/7f2148f125e2020df501344d4392bb59a39af810/css/style.css#L162-L214
+ *
+ */
+
+.cursor {
+    animation: 1.5s linear infinite cursor-effect;
+}
+
+@-webkit-keyframes cursor-effect {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes cursor-effect {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+.text-rainbow {
+    font-weight: 600;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-animation 3s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow-animation {
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
 }

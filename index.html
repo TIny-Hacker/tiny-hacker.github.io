@@ -18,278 +18,439 @@
             gtag('config', 'G-K8JP8KGWCM');
         </script>
     </head>
-    
-    <body style="background-color: #282828; font-family: Fira Mono;">
-        <div style="margin: auto;">
-            <h1 id="title">TIny_Hacker's Website</h1>
-            <br/>
-            <h1 class="subtitle">About me:</h1>
-            <p class="paragraph" style="margin: 0% 10%;">I'm TIny_Hacker and I program calculators! I first started out using TI-BASIC, though now I mostly use C, and ez80 Assembly. You can find a lot of my projects on GitHub or Cemetech. I also like to mess around with pixel art/graphic design and I occasionally upload videos to my YouTube (also calculator related) channel as well. See you around!</p>
-            <br/>
-            <h1 class="subtitle">Socials:</h1>
-            <p class="paragraph">
-                <a href="https://github.com/tiny-hacker/" class="link">GitHub</a> | 
-                <a href="https://youtube.com/TInyHackerCalcs" class="link">YouTube</a> | 
-                <a href="https://bsky.app/profile/tiniesthacker.bsky.social" class="link">Bluesky</a> | 
-                <a href="https://my.calcs.quest/u/117?ref=117" class="link">MyCalcs</a> | 
-                <a href="https://www.cemetech.net/forum/profile.php?mode=viewprofile&u=30499" class="link">Cemetech</a>
-            </p>
-            <br/>
-            <h1 class="subtitle">Projects:</h1>
-        </div>
-        <table class="table" style="margin: auto; overflow-x: auto;">
-            <tbody>
-                <tr>
-                    <td class="header">Name</td>
-                    <td class="header">Created</td>
-                    <td class="header">Download</td>
-                    <td class="header">Status</td>
-                </tr>
-                <tr>
-                    <td class="row">Road to Nowhere</td>
-                    <td class="row">November 25, 2023</td>
-                    <td class="row">
-                        <a title="GitHub Repository" href="https://github.com/TIny-Hacker/road-to-nowhere" target="_blank" class="download">
-                            <img src="images/github.svg" alt="GitHub" width="24pt" height="24pt">
-                        </a>╵
-                        <a title="Download Latest" href="https://github.com/TIny-Hacker/road-to-nowhere/releases/latest" class="download">
-                            <img src="images/download.svg" alt="Download" width="24pt" height="24pt">
+    <div id="wrapper">
+        <header>
+            <div class="header-text">
+                TIny_Hacker's Website
+            </div>
+        </header>
+        <main>
+            <div class="text-default">
+                <div class="caption" style="margin-top: 5vh;">About me<span class="cursor">_</span></div><br>
+                I'm TIny_Hacker, a developer of mostly calculator-related things. 
+                This website is home to my projects, many of which are written in C or eZ80 assembly, though a few use other languages such as TI-BASIC or JS.
+                You can learn more about my projects on GitHub or Cemetech, and I occasionally upload (also calculator-related) videos to a YouTube channel as well.
+                If you're curious about the specific calculators I own, check out my MyCalcs profile. (And if you own calculators go create your own!)
+                <br>
+                Aside from calculators, I also enjoy graphic design, music, and cooking. My Bluesky profile contains slightly more varied content but the calculators are inescapable.
+            </div>
+            <div class="divider"></div>
+            <div class="socials">
+                <a class="socials button" href="https://github.com/TIny-Hacker">
+                    <img class="socials icon" src="images/github.svg" alt="GitHub" width="24px" height="24px">
+                    <div class="socials text">GitHub</div>
+                </a>
+                <a class="socials button" href="https://www.youtube.com/tinyhackercalcs/videos">
+                    <img class="socials icon" src="images/youtube.svg" alt="YouTube" width="24px" height="24px">
+                    <div class="socials text">YouTube</div>
+                </a>
+                <a class="socials button" href="https://bsky.app/profile/tiniesthacker.bsky.social">
+                    <img class="socials icon" src="images/bluesky.svg" alt="Bluesky" width="20pt" height="20pt">
+                    <div class="socials text">Bluesky</div>
+                </a>
+                <a class="socials button" href="https://my.calcs.quest/u/117?ref=117">
+                    <img class="socials icon" src="images/mycalcs.svg" alt="MyCalcs" width="24px" height="24px">
+                    <div class="socials text">MyCalcs</div>
+                </a>
+                <a class="socials button" href="https://www.cemetech.net/users/TIny_Hacker">
+                    <img class="socials icon" src="images/cemetech.svg" alt="Cemetech" width="24px" height="24px">
+                    <div class="socials text">Cemetech</div>
+                </a>
+            </div>
+            <div class="divider"></div>
+            <div class="projects">
+                <div class="project-item">
+                    <div class="project-item-text text-default">eZ80 Docs</div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-brief">
+                        <div class="project-item-date">Ongoing</div>
+                        <a class="project-item-button" href="https://github.com/EzCE/ez80-docs">
+                            <img src="images/github.svg" alt="GitHub" width="24px" height="24px">
                         </a>
-                    </td>
-                    <td class="row">
-                        <div class="tooltip">
-                            <img class="complete" src="images/complete.svg" alt="Complete" width="32pt" height="32pt">
+                        <a class="project-item-button" href="https://ezce.github.io/ez80-docs/">
+                            <img src="images/visit.svg" alt="Visit" width="24px" height="24px">
+                        </a>
+                        <div class="tooltip project-item-icon">
+                            <img src="images/in-progress.svg" alt="In Progress" width="24px" height="24px">
+                            <span class="tooltiptext">In Progress</span>
+                        </div>
+                    </div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-text text-default">
+                        <div type="button" class="button collapsible">Details</div>
+                        <div class="content">
+                            Community documentation project for assembly programming on TI's eZ80 calculators. 
+                            The site contains both tutorials and resources and aims to be both easy to update 
+                            and understand.
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-text text-default">Road to Nowhere</div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-brief">
+                        <div class="project-item-date">November 25, 2023</div>
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/road-to-nowhere">
+                            <img src="images/github.svg" alt="GitHub" width="24px" height="24px">
+                        </a>
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/road-to-nowhere/releases/latest">
+                            <img src="images/download.svg" alt="Download" width="24px" height="24px">
+                        </a>
+                        <div class="tooltip project-item-icon">
+                            <img src="images/complete.svg" alt="Complete" width="24px" height="24px">
                             <span class="tooltiptext">Complete</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">Spriter</td>
-                    <td class="row">August 22, 2023</td>
-                    <td class="row">
-                        <a title="GitHub Repository" href="https://github.com/TIny-Hacker/Spriter" target="_blank" class="download">
-                            <img src="images/github.svg" alt="GitHub" width="24pt" height="24pt">
-                        </a>╵
-                        <a title="Download Latest" href="https://github.com/TIny-Hacker/Spriter/releases/latest" class="download">
-                            <img src="images/download.svg" alt="Download" width="24pt" height="24pt">
+                    </div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-text text-default">
+                        <div type="button" class="button collapsible">Details</div>
+                        <div class="content">
+                            A screensaver-style program for the TI-84 Plus CE, used as an entry for 
+                            <a class="url-default" href="https://www.cemetech.net/news/2023/11/1007/_/cemetech-contest-26-screensaver" target="_blank" rel="noopener noreferrer">CC26</a>.
+                            It features weather and a day / night cycle synced to the device's time, along with a number of easter eggs 
+                            and references.
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-text text-default">Spriter</div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-brief">
+                        <div class="project-item-date">August 22, 2023</div>
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/Spriter">
+                            <img src="images/github.svg" alt="GitHub" width="24px" height="24px">
                         </a>
-                    </td>
-                    <td class="row">
-                        <div class="tooltip">
-                            <img class="complete" src="images/complete.svg" alt="Complete" width="32pt" height="32pt">
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/Spriter/releases/tag/1.5">
+                            <img src="images/download.svg" alt="Download" width="24px" height="24px">
+                        </a>
+                        <div class="tooltip project-item-icon">
+                            <img src="images/complete.svg" alt="Complete" width="24px" height="24px">
                             <span class="tooltiptext">Complete</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">TI-84 Addition Edition</td>
-                    <td class="row">March 28, 2023</td>
-                    <td class="row">
-                        <a title="GitHub Repository" href="https://github.com/TIny-Hacker/ti-84-addition-edition" target="_blank" class="download">
-                            <img src="images/github.svg" alt="GitHub" width="24pt" height="24pt">
-                        </a>╵
-                        <a title="Download Latest" href="https://github.com/TIny-Hacker/ti-84-addition-edition/releases/latest" class="download">
-                            <img src="images/download.svg" alt="Download" width="24pt" height="24pt">
+                    </div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-text text-default">
+                        <div type="button" class="button collapsible">Details</div>
+                        <div class="content">
+                            A simple, minimalistic sprite and icon creator written in Hybrid TI-BASIC with the Celtic CE library. 
+                            It features an editor for sprites using both xLibC and BufSprite palettes.
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-text text-default">TI-84 Addition Edition</div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-brief">
+                        <div class="project-item-date">March 28, 2023</div>
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/ti-84-addition-edition">
+                            <img src="images/github.svg" alt="GitHub" width="24px" height="24px">
                         </a>
-                    </td>
-                    <td class="row">
-                        <div class="tooltip">
-                            <img class="complete" src="images/complete.svg" alt="Complete" width="32pt" height="32pt">
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/ti-84-addition-edition/releases/latest">
+                            <img src="images/download.svg" alt="Download" width="24px" height="24px">
+                        </a>
+                        <div class="tooltip project-item-icon">
+                            <img src="images/complete.svg" alt="Complete" width="24px" height="24px">
                             <span class="tooltiptext">Complete</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">TI-BASIC Syntax Highlighting</td>
-                    <td class="row">February 20, 2023</td>
-                    <td class="row">
-                        <a title="GitHub Repository" href="https://github.com/TIny-Hacker/language-ti-basic" target="_blank" class="download">
-                            <img src="images/github.svg" alt="GitHub" width="24pt" height="24pt">
-                        </a>╵
-                        <a title="Download Latest" href="https://github.com/TIny-Hacker/language-ti-basic/releases/latest" class="download">
-                            <img src="images/download.svg" alt="Download" width="24pt" height="24pt">
+                    </div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-text text-default">
+                        <div type="button" class="button collapsible">Details</div>
+                        <div class="content">
+                            Turn your TI-84 Plus CE into the legendary TI-83 Plus Addition Edition. (Now with <span class="text-rainbow">color!</span>)
+                            This program will disable all keys other than 0-9, enter, and + to give you an experience
+                            as close as possible to the TI-83 Plus Addition Edition.
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-text text-default">TI-BASIC Syntax Highlighting</div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-brief">
+                        <div class="project-item-date">February 20, 2023</div>
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/language-ti-basic">
+                            <img src="images/github.svg" alt="GitHub" width="24px" height="24px">
                         </a>
-                    </td>
-                    <td class="row">
-                        <div class="tooltip">
-                            <img class="complete" src="images/complete.svg" alt="Complete" width="32pt" height="32pt">
+                        <a class="project-item-button" href="https://marketplace.visualstudio.com/items?itemName=tiny-hacker.ti-basic">
+                            <img src="images/download.svg" alt="Download" width="24px" height="24px">
+                        </a>
+                        <div class="tooltip project-item-icon">
+                            <img src="images/complete.svg" alt="Complete" width="24px" height="24px">
                             <span class="tooltiptext">Complete</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">Always-on Dark Mode</td>
-                    <td class="row">September 16, 2022</td>
-                    <td class="row">
-                        <a title="GitHub Repository" href="https://github.com/TIny-Hacker/always-dark" target="_blank" class="download">
-                            <img src="images/github.svg" alt="GitHub" width="24pt" height="24pt">
-                        </a>╵
-                        <a title="Download Latest" href="https://github.com/TIny-Hacker/always-dark/releases/latest" class="download">
-                            <img src="images/download.svg" alt="Download" width="24pt" height="24pt">
+                    </div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-text text-default">
+                        <div type="button" class="button collapsible">Details</div>
+                        <div class="content">
+                            This extension provides syntax highlighting, snippets, and importing / exporting for the (e)Z80 TI-BASIC language. 
+                            It is also currently used by <a class="url-default" href="https://github.com/github-linguist/linguist"  target="_blank" rel="noopener noreferrer">GitHub linguist</a> 
+                            to provide syntax highlighting for TI-BASIC on the GitHub website.
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-text text-default">Always-on Dark Mode</div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-brief">
+                        <div class="project-item-date">September 16, 2022</div>
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/always-dark">
+                            <img src="images/github.svg" alt="GitHub" width="24px" height="24px">
                         </a>
-                    </td>
-                    <td class="row">
-                        <div class="tooltip">
-                            <img class="complete" src="images/complete.svg" alt="Complete" width="32pt" height="32pt">
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/always-dark/releases/latest">
+                            <img src="images/download.svg" alt="Download" width="24px" height="24px">
+                        </a>
+                        <div class="tooltip project-item-icon">
+                            <img src="images/complete.svg" alt="Complete" width="24px" height="24px">
                             <span class="tooltiptext">Complete</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">Clock CE</td>
-                    <td class="row">September 3, 2022</td>
-                    <td class="row">
-                        <a title="GitHub Repository" href="https://github.com/TIny-Hacker/CE-Clock" target="_blank" class="download">
-                            <img src="images/github.svg" alt="GitHub" width="24pt" height="24pt">
-                        </a>╵
-                        <a title="Download Latest" href="files/CLOCK.8xp" target="_blank" rel="noopener noreferrer" class="download">
-                            <img src="images/download.svg" alt="Download" width="24pt" height="24pt">
+                    </div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-text text-default">
+                        <div type="button" class="button collapsible">Details</div>
+                        <div class="content">
+                            This program works similarly to other dark mode programs for the TI-84 Plus CE, with the 
+                            exception that it will maintain dark mode even after turning the calculator off and back on again.
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-text text-default">CE Clock</div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-brief">
+                        <div class="project-item-date">September 3, 2022</div>
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/CE-Clock">
+                            <img src="images/github.svg" alt="GitHub" width="24px" height="24px">
                         </a>
-                    </td>
-                    <td class="row">
-                        <div class="tooltip">
-                            <img class="complete" src="images/complete.svg" alt="Complete" width="32pt" height="32pt">
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/CE-Clock/releases/latest">
+                            <img src="images/download.svg" alt="Download" width="24px" height="24px">
+                        </a>
+                        <div class="tooltip project-item-icon">
+                            <img src="images/complete.svg" alt="Complete" width="24px" height="24px">
                             <span class="tooltiptext">Complete</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">CEaShell</td>
-                    <td class="row">September 2, 2022</td>
-                    <td class="row">
-                        <a title="GitHub Repository" href="https://github.com/RoccoLoxPrograms/CEaShell" target="_blank" class="download">
-                            <img src="images/github.svg" alt="GitHub" width="24pt" height="24pt">
-                        </a>╵
-                        <a title="Download Latest" href="https://github.com/RoccoLoxPrograms/CEaShell/releases/latest" class="download">
-                            <img src="images/download.svg" alt="Download" width="24pt" height="24pt">
+                    </div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-text text-default">
+                        <div type="button" class="button collapsible">Details</div>
+                        <div class="content">
+                            This is a port of my Doors CS 7 Clock to the TI-84 Plus CE using Celtic CE. 
+                            It dynamically updates the program icon when run to display the current time. 
+                            This program is more just a demo as almost all shells have clocks anyway.
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-text text-default">CEaShell</div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-brief">
+                        <div class="project-item-date">September 2, 2022</div>
+                        <a class="project-item-button" href="https://github.com/RoccoLoxPrograms/CEaShell">
+                            <img src="images/github.svg" alt="GitHub" width="24px" height="24px">
                         </a>
-                    </td>
-                    <td class="row">
-                        <div class="tooltip">
-                            <img class="complete" src="images/complete.svg" alt="Complete" width="32pt" height="32pt">
+                        <a class="project-item-button" href="https://github.com/RoccoLoxPrograms/CEaShell/releases/latest">
+                            <img src="images/download.svg" alt="Download" width="24px" height="24px">
+                        </a>
+                        <div class="tooltip project-item-icon">
+                            <img src="images/complete.svg" alt="Complete" width="24px" height="24px">
                             <span class="tooltiptext">Complete</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">Into The Shade</td>
-                    <td class="row">June 1, 2022</td>
-                    <td class="row">
-                        <a title="GitHub Repository" href="https://github.com/TIny-Hacker/Into-The-Shade" target="_blank" class="download">
-                            <img src="images/github.svg" alt="GitHub" width="24pt" height="24pt">
-                        </a>╵
-                        <a title="Download Latest" href="files/Into The Shade v1.0.zip" target="_blank" rel="noopener noreferrer" class="download">
-                            <img src="images/download.svg" alt="Download" width="24pt" height="24pt">
+                    </div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-text text-default">
+                        <div type="button" class="button collapsible">Details</div>
+                        <div class="content">
+                            A shell for the TI-84 Plus CE / 83 PCE calculators. It features a customizable interface, OS integrations, 
+                            file operations, and more.
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-text text-default">Into The Shade</div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-brief">
+                        <div class="project-item-date">June 1, 2022</div>
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/Into-The-Shade">
+                            <img src="images/github.svg" alt="GitHub" width="24px" height="24px">
                         </a>
-                    </td>
-                    <td class="row">
-                        <div class="tooltip">
-                            <img class="complete" src="images/complete.svg" alt="Complete" width="32pt" height="32pt">
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/Into-The-Shade/releases/latest">
+                            <img src="images/download.svg" alt="Download" width="24px" height="24px">
+                        </a>
+                        <div class="tooltip project-item-icon">
+                            <img src="images/unstable.svg" alt="Unstable" width="24px" height="24px">
+                            <span class="tooltiptext">Unstable</span>
+                        </div>
+                    </div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-text text-default">
+                        <div type="button" class="button collapsible">Details</div>
+                        <div class="content">
+                            An odd minigame involving chasing a small square of shade across the screen to prevent your vehicle from 
+                            overheating. It features five vehicles and an even stranger final cutscene.
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-text text-default">Snorlax's Lunchtime CE</div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-brief">
+                        <div class="project-item-date">February 2, 2022</div>
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/Snorlax-Lunchtime-CE">
+                            <img src="images/github.svg" alt="GitHub" width="24px" height="24px">
+                        </a>
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/Snorlax-Lunchtime-CE/releases/latest">
+                            <img src="images/download.svg" alt="Download" width="24px" height="24px">
+                        </a>
+                        <div class="tooltip project-item-icon">
+                            <img src="images/complete.svg" alt="Complete" width="24px" height="24px">
                             <span class="tooltiptext">Complete</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">Snorlax's Lunchtime CE</td>
-                    <td class="row">February 2, 2022</td>
-                    <td class="row">
-                        <a title="GitHub Repository" href="https://github.com/TIny-Hacker/Snorlax-Lunchtime-CE" target="_blank" class="download">
-                            <img src="images/github.svg" alt="GitHub" width="24pt" height="24pt">
-                        </a>╵
-                        <a title="Download Latest" href="files/Snorlax's Lunchtime CE v1.1.zip" target="_blank" rel="noopener noreferrer" class="download">
-                            <img src="images/download.svg" alt="Download" width="24pt" height="24pt">
+                    </div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-text text-default">
+                        <div type="button" class="button collapsible">Details</div>
+                        <div class="content">
+                            A clone of the PokeMini "Snorlax's Lunchtime" minigame to the TI-84 Plus CE. Unlike my previous Snorlax's Lunchtime 
+                            game for the TI-84 / 83 Plus monochrome calculators, this is written in C and features a high score menu.
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-text text-default">Snorlax's Lunchtime</div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-brief">
+                        <div class="project-item-date">December 21, 2021</div>
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/Snorlax-Lunch-Time">
+                            <img src="images/github.svg" alt="GitHub" width="24px" height="24px">
                         </a>
-                    </td>
-                    <td class="row">
-                        <div class="tooltip">
-                            <img class="complete" src="images/complete.svg" alt="Complete" width="32pt" height="32pt">
+                        <a class="project-item-button" href="files/Snorlax's Lunchtime.zip">
+                            <img src="images/download.svg" alt="Download" width="24px" height="24px">
+                        </a>
+                        <div class="tooltip project-item-icon">
+                            <img src="images/complete.svg" alt="Complete" width="24px" height="24px">
                             <span class="tooltiptext">Complete</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">Snorlax's Lunchtime</td>
-                    <td class="row">December 21, 2021</td>
-                    <td class="row">
-                        <a title="GitHub Repository" href="https://github.com/TIny-Hacker/Snorlax-Lunch-Time" target="_blank" class="download">
-                            <img src="images/github.svg" alt="GitHub" width="24pt" height="24pt">
-                        </a>╵
-                        <a title="Download Latest" href="files/Snorlax's Lunchtime.zip" target="_blank" rel="noopener noreferrer" class="download">
-                            <img src="images/download.svg" alt="Download" width="24pt" height="24pt">
+                    </div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-text text-default">
+                        <div type="button" class="button collapsible">Details</div>
+                        <div class="content">
+                            Another clone of the PokeMini "Snorlax's Lunchtime" minigame, written for the monochrome TI-84 / 83 Plus 
+                            in hybrid TI-BASIC with the Doors CS libraries.
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-text text-default">DCS 7 Clock</div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-brief">
+                        <div class="project-item-date">September 16, 2020</div>
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/DCS-7-Clock">
+                            <img src="images/github.svg" alt="GitHub" width="24px" height="24px">
                         </a>
-                    </td>
-                    <td class="row">
-                        <div class="tooltip">
-                            <img class="complete" src="images/complete.svg" alt="Complete" width="32pt" height="32pt">
+                        <a class="project-item-button" href="files/DCS 7 Clock v1.1.zip">
+                            <img src="images/download.svg" alt="Download" width="24px" height="24px">
+                        </a>
+                        <div class="tooltip project-item-icon">
+                            <img src="images/complete.svg" alt="Complete" width="24px" height="24px">
                             <span class="tooltiptext">Complete</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">DCS 7 Clock</td>
-                    <td class="row">September 16, 2020</td>
-                    <td class="row">
-                        <a title="GitHub Repository" href="https://github.com/TIny-Hacker/DCS-7-Clock" target="_blank" class="download">
-                            <img src="images/github.svg" alt="GitHub" width="24pt" height="24pt">
-                        </a>╵
-                        <a title="Download Latest" href="files/DCS 7 Clock v1.1.zip" target="_blank" rel="noopener noreferrer" class="download">
-                            <img src="images/download.svg" alt="Download" width="24pt" height="24pt">
+                    </div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-text text-default">
+                        <div type="button" class="button collapsible">Details</div>
+                        <div class="content">
+                            A digital clock program that displays the current hour in twelve-hour time whenever ran from Doors CS. 
+                            Like the CE Clock program, the icon is dynamically updated whenever the program is ran.
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-text text-default">Cow Clicker</div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-brief">
+                        <div class="project-item-date">September 11, 2020</div>
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/Cow-Clicker-84-Plus">
+                            <img src="images/github.svg" alt="GitHub" width="24px" height="24px">
                         </a>
-                    </td>
-                    <td class="row">
-                        <div class="tooltip">
-                            <img class="complete" src="images/complete.svg" alt="Complete" width="32pt" height="32pt">
+                        <a class="project-item-button" href="files/Cow Clicker v1.2.zip">
+                            <img src="images/download.svg" alt="Download" width="24px" height="24px">
+                        </a>
+                        <div class="tooltip project-item-icon">
+                            <img src="images/complete.svg" alt="Complete" width="24px" height="24px">
                             <span class="tooltiptext">Complete</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">Cow Clicker</td>
-                    <td class="row">September 11, 2020</td>
-                    <td class="row">
-                        <a title="GitHub Repository" href="https://github.com/TIny-Hacker/Cow-Clicker-84-Plus" target="_blank" class="download">
-                            <img src="images/github.svg" alt="GitHub" width="24pt" height="24pt">
-                        </a>╵
-                        <a title="Download Latest" href="files/Cow Clicker v1.2.zip" target="_blank" rel="noopener noreferrer" class="download">
-                            <img src="images/download.svg" alt="Download" width="24pt" height="24pt">
-                        </a>
-                    </td>
-                    <td class="row">
-                        <div class="tooltip">
-                            <img class="complete" src="images/complete.svg" alt="Complete" width="32pt" height="32pt">
-                            <span class="tooltiptext">Complete</span>
+                    </div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-text text-default">
+                        <div type="button" class="button collapsible">Details</div>
+                        <div class="content">
+                            This is a clone of Ian Bogost's Facebook game 
+                            <a class="url-default" href="https://bogost.com/games/cow_clicker/" target="_blank" rel="noopener noreferrer">Cow Clicker</a> for the TI-83 Plus / 84 Plus (SE). 
+                            It is not a particularly faithful clone and mostly only features the clicking of cows. 
+                            It requires Doors CS 7.2 in order to run correctly.
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">TI-Terminal</td>
-                    <td class="row">July 4, 2020</td>
-                    <td class="row">
-                        <a title="GitHub Repository" href="https://github.com/TIny-Hacker/TI-Terminal/" target="_blank" class="download">
-                            <img src="images/github.svg" alt="GitHub" width="24pt" height="24pt">
-                        </a>╵
-                        <a title="Download Latest" href="noSuchFile.html" class="download">
-                            <img src="images/download.svg" alt="Download" width="24pt" height="24pt">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-text text-default">TI-Terminal</div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-brief">
+                        <div class="project-item-date">July 4, 2020</div>
+                        <a class="project-item-button" href="https://github.com/TIny-Hacker/TI-Terminal/">
+                            <img src="images/github.svg" alt="GitHub" width="24px" height="24px">
                         </a>
-                    </td>
-                    <td class="row">
-                        <div class="tooltip">
-                            <img class="canceled" src="images/canceled.svg" alt="Complete" width="32pt" height="32pt">
+                        <a class="project-item-button" href="no-such-file.html">
+                            <img src="images/download.svg" alt="Download" width="24px" height="24px">
+                        </a>
+                        <div class="tooltip project-item-icon">
+                            <img src="images/canceled.svg" alt="Canceled" width="24px" height="24px">
                             <span class="tooltiptext">Canceled</span>
                         </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br/>    <!-- For the copyright to not cover the table -->
-        <br/>
+                    </div>
+                    <div class="project-item-divider"></div>
+                    <div class="project-item-text text-default">
+                        <div type="button" class="button collapsible">Details</div>
+                        <div class="content">
+                            A terminal-style interface for the TI-83 Plus, written in pure TI-BASIC. 
+                            This project proved to be far too ambitious for me at the time and I got bored of it and stopped working on it.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         <footer>
-            <hr style="margin: 0px; margin-bottom: 5px;">
-            <p style="margin: 5px; color: rgb(126, 126, 126)">&copy; Copyright 2022 - 2024 TIny_Hacker
-                <a href="https://tiny-hacker.github.io/old-website" target="_blank" style="float: right;" class="footer-link" title="This was my old website with a few posts on it, made with a Jekyll theme by cotes2020.">
+            <div class="footer-text">
+                © Copyright 2022 - 2024 TIny_Hacker
+            </div>
+            <a class="footer-text button" href="https://tiny-hacker.github.io/old-website">
+                <div class="footer-text" style="margin: .3vh 1vh .3vh 1vh;">
                     Old Website
-                </a>
-            </p>
+                </div>
+            </a>
         </footer>
-    </body>
+    </div>
 </html>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+
+document.addEventListener('mousedown', function(event) {
+    if (event.detail > 1) {
+        event.preventDefault();
+    }
+}, false);
+</script>
