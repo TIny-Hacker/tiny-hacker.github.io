@@ -186,7 +186,7 @@ br {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: baseline;
     width: 85%;
     margin: 25px auto 25px auto;
     gap: 25px;
