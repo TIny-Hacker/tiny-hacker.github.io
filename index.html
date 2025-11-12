@@ -502,11 +502,10 @@
                 content.style.display = "block";
             }
         });
+        coll[i].addEventListener('mousedown', function(event) {
+            if (event.detail > 1) {
+                event.preventDefault();
+            }
+        }, false);
     }
-
-document.addEventListener('mousedown', function(event) {
-    if (event.detail > 1) {
-        event.preventDefault();
-    }
-}, false);
 </script>
